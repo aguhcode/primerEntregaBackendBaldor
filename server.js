@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.engine('handlebars', expressHandlebars());
+app.engine('handlebars', expressHandlebars.engine());
 app.set('view engine', 'handlebars');
 app.set('views', 'views');
 

@@ -8,7 +8,6 @@
 </head>
 <body>
     <h1>Bienvenido a la Tienda</h1>
-    {{!-- Aquí puedes mostrar la lista de productos --}}
     <ul>
         {{#each listaDeProductos}}
             <li>
@@ -19,7 +18,6 @@
     </ul>
 
     <script>
-        // Esta función envía un mensaje al servidor WebSocket al hacer clic en el botón
         function agregarAlCarrito(productoId) {
             socket.send(`Agregar al carrito: ${productoId}`);
         }
